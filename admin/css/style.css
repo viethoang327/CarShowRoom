@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeSpeed;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none!important;
+     color: #fff!important;
+}
+.wrapper{
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#navbar{
+    float: left;
+    background-color: #1c252a;
+    color: white;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.navbar-title{
+    font-weight: 700;
+    font-style: italic;
+    height: 15%;
+    padding: 40px 0px;
+    cursor: pointer;
+}
+ul.navbar-list{
+    list-style: none;
+    margin-top: 60px;
+}
+li.navbar-item{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    border-bottom: solid #fff 1px;
+    padding: 16px 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+li.navbar-item:hover{
+    background-color: rgb(255, 222, 173,.4);
+}
+.navbar-logout{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid #fff 1px;
+    margin-top: 150px;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+.navbar-logout:hover{
+    background-color: rgb(255, 222, 173,.4);
+}
+#main{
+    width: 80%;
+    height: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    overflow: scroll;
+}
+.main-home{
+    height: 100%;
+    
+}
+.main-title{
+    padding: 40px 0px;
+}
+.main-view{
+    padding: 16px;
+    color: #1B2430;
+}
+/* members-view */
+.modal-addform{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.addform-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.addform-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 12px;
+    cursor: pointer;
+}
+.addform-close:hover{
+    opacity: 0.8;
+}
+.addform-open{
+    display: flex;
+}
+.modal-editform{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.editform-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.editform-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 12px;
+    cursor: pointer;
+}
+.editform-close:hover{
+    opacity: 0.8;
+}
+.editform-open{
+    display: flex;
+}
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.member-tbl{
+    margin-top: 48px;
+}
+/* PRODUCTS VIEW */
+/* ADD CATEGORY */
+.modal-addCatForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.addCatForm-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.addCatForm-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 12px;
+    cursor: pointer;
+}
+.addCatForm-close:hover{
+    opacity: 0.8;
+}
+.addCatForm-open{
+    display: flex;
+}
+/* ADD PRODUCT */
+.modal-addProductForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.addProductForm-container{
+    background-color: #fff;
+    width: 1300px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.addProductForm-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 12px;
+    cursor: pointer;
+}
+.addProductForm-close:hover{
+    opacity: 0.8;
+}
+.addProductForm-open{
+    display: flex;
+}
+/* EDIT PRODUCT */
+.modal-editProductForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgb(0, 0, 0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.editProductForm-container{
+    background-color: #fff;
+    width: 1300px;
+    max-width: calc(100% - 32px);
+    min-height:200px;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+.editProductForm-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 12px;
+    cursor: pointer;
+}
+.editProductForm-close:hover{
+    opacity: 0.8;
+}
+.editProductForm-open{
+    display: flex;
+}
